@@ -11,14 +11,14 @@ import torch.nn.functional as F
 from jaxtyping import Bool, Float, Int
 from torch import Tensor
 import math
-from cs336_basics.optimizer import AdamW, get_lr_cosine_schedule
+from transformer_lm.optimizer import AdamW, get_lr_cosine_schedule
 
 
 import regex as re
 from collections import defaultdict
 
-from cs336_basics.tokenizer import BPETokenizer
-from cs336_basics.modules import (
+from transformer_lm.tokenizer import BPETokenizer
+from transformer_lm.modules import (
     LinearModule,
     EmbeddingModule,
     RMSNorm,
@@ -107,7 +107,7 @@ def run_swiglu(
 
     # We can use the FeedForward class we implemented in modules.py
     # But FeedForward was not imported? Let's check imports.
-    # It is imported as part of `cs336_basics.modules` but likely not exposed as `FeedForward`
+    # It is imported as part of `transformer_lm.modules` but likely not exposed as `FeedForward`
     # if I didn't add it to __all__ or import it explicitly?
     # Actually I can just use nn.Linear and F.silu directly here for simplicity
     # since this is just an adapter test for the logic.

@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from cs336_basics.generation import generate
+from transformer_lm.generation import generate
 
 
 class MockModel(nn.Module):

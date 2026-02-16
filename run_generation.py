@@ -1,9 +1,9 @@
 import torch
 import json
 import os
-from cs336_basics.modules import TransformerLM
-from cs336_basics.tokenizer import BPETokenizer
-from cs336_basics.generation import generate
+from transformer_lm.modules import TransformerLM
+from transformer_lm.tokenizer import BPETokenizer
+from transformer_lm.generation import generate
 from tests.common import FIXTURES_PATH, gpt2_bytes_to_unicode
 import argparse
 

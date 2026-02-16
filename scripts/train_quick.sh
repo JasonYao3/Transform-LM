@@ -22,7 +22,7 @@ echo "=================================================="
 echo "Starting quick training for generation check -> ${OUT_DIR}"
 echo "=================================================="
 
-uv run python cs336_basics/train.py \
+uv run python transformer_lm/train.py \
     --data_path "${TRAIN_DATA}" \
     --val_data_path "${VAL_DATA}" \
     --out_dir "${OUT_DIR}" \

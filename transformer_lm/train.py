@@ -9,9 +9,9 @@ import math
 import numpy as np
 import torch
 
-from cs336_basics.modules import TransformerLM
-from cs336_basics.optimizer import AdamW, get_lr_cosine_schedule, gradient_clipping
-from cs336_basics.loggers import ExperimentLogger
+from transformer_lm.modules import TransformerLM
+from transformer_lm.optimizer import AdamW, get_lr_cosine_schedule, gradient_clipping
+from transformer_lm.loggers import ExperimentLogger
 
 # Configure logging
 logging.basicConfig(

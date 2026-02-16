@@ -22,7 +22,7 @@ echo "=================================================="
 echo "Starting Baseline Run (With RMSNorm) -> ${OUT_DIR_BASE}"
 echo "=================================================="
 
-uv run python cs336_basics/train.py \
+uv run python transformer_lm/train.py \
     --data_path "${TRAIN_DATA}" \
     --val_data_path "${VAL_DATA}" \
     --out_dir "${OUT_DIR_BASE}" \
@@ -47,7 +47,7 @@ echo "=================================================="
 echo "Starting Ablation Run (No RMSNorm) -> ${OUT_DIR_ABLATION}"
 echo "=================================================="
 
-uv run python cs336_basics/train.py \
+uv run python transformer_lm/train.py \
     --data_path "${TRAIN_DATA}" \
     --val_data_path "${VAL_DATA}" \
     --out_dir "${OUT_DIR_ABLATION}" \

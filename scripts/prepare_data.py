@@ -3,7 +3,7 @@ import sys
 import json
 import torch
 import numpy as np
-from cs336_basics.tokenizer import BPETokenizer
+from transformer_lm.tokenizer import BPETokenizer
 from tests.common import FIXTURES_PATH, gpt2_bytes_to_unicode
 
 

@@ -111,7 +111,7 @@ wheels = [
 ]
 
 [[package]]
-name = "cs336-basics"
+name = "transformer-lm"
 version = "1.0.6"
 source = { editable = "." }
 dependencies = [

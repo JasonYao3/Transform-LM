@@ -3,9 +3,9 @@ set -e
 
 # Data paths (using the new OWT binaries)
 TRAIN_DATA="owt_train.org.bin" # Wait, prepare_owt.py saves as .bin, but train.py uses np.memmap. 
-# My prepare_owt.py creates "owt_train.bin".
-TRAIN_DATA="owt_train.bin"
-VAL_DATA="owt_valid.bin"
+# My prepare_owt.py creates "data/owt_train.bin".
+TRAIN_DATA="data/owt_train.bin"
+VAL_DATA="data/owt_valid.bin"
 
 # Model Config (Same as TinyStories Baseline)
 CTX_LEN=256

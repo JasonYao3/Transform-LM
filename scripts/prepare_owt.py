@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 def prepare_split(split, max_tokens=None):
     input_file = f"data/owt_{split}.txt"
-    output_file = f"owt_{split}.bin"
+    output_file = f"data/owt_{split}.bin"
 
     if not os.path.exists(input_file):
         print(f"Skipping {split}: {input_file} not found")

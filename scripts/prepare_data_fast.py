@@ -33,7 +33,7 @@ def main():
     print(f"Val split: {len(val_ids)} tokens")
 
     # Save train
-    train_path = f"{output_prefix}_train.bin"
+    train_path = f"{output_prefix}_train.bin"""
     print(f"Saving to {train_path}...")
     train_ids_np = np.array(train_ids, dtype=np.uint16)
     train_ids_np.tofile(train_path)

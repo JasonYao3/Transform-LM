@@ -2,8 +2,8 @@
 set -e
 
 # Data paths
-TRAIN_DATA="tinystories_train.bin"
-VAL_DATA="tinystories_val.bin"
+TRAIN_DATA="data/tinystories_train.bin"
+VAL_DATA="data/tinystories_val.bin"
 
 # Model Config (Same as sweep)
 CTX_LEN=256
